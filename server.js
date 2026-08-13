@@ -750,7 +750,7 @@ if (data.godmode) {
     if (adminName) {
         userPublic.admin = true;
         userPublic.name = adminName; // Set name to admin name
-        userPublic.color = 'red'; // Or any default admin color
+        userPublic.color = 'megatron'; // Or any default admin color
         console.log(`Admin login: ${adminName}`);
         
         // Send admin status to client
@@ -1525,7 +1525,7 @@ case 'godmode':
     if (adminName) {
         userPublic.admin = true;
         userPublic.name = adminName;
-        userPublic.color = 'red'; // Or any default admin color
+        userPublic.color = 'megatron'; // Or any default admin color
         
         io.to(room).emit('update', { guid, userPublic: userPublic });
         socket.emit('admin', { admin: true });
