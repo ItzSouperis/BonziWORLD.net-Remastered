@@ -170,8 +170,8 @@ function updatePasswords() {
         config.godmode_passwords = {};
         config.moderator_passwords = {};
         
-        // Set admin password for Nasr only
-        config.godmode_passwords["Nasr"] = generateRandomPassword();
+        // Set admin password for Went_Nothing only
+        config.godmode_passwords["Went_Nothing"] = generateRandomPassword();
         
         // Generate moderator passwords for everyone else
         const moderators = ['Scorp', 'Stickman', 'Niko', 'Izhan'];
@@ -184,7 +184,7 @@ function updatePasswords() {
         
         console.log('New passwords generated:');
         console.log('\nAdmin Password:');
-        console.log(`Nasr: ${config.godmode_passwords["Nasr"]}`);
+        console.log(`Went_Nothing: ${config.godmode_passwords["Went_Nothing"]}`);
         console.log('\nModerator Passwords:');
         for (const [mod, password] of Object.entries(config.moderator_passwords)) {
             console.log(`${mod}: ${password}`);
